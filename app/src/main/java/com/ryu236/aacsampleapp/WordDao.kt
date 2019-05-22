@@ -8,7 +8,7 @@ import androidx.room.Query
 interface WordDao {
 
     @Query("SELECT * FROM word_table ORDER BY word ASC")
-    fun getAllWords() List<Word>
+    fun getAllWords(): List<Word>
 
     @Insert
     suspend fun insert(word: Word)
