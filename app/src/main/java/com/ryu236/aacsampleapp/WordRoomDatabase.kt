@@ -48,7 +48,7 @@ abstract class WordRoomDatabase : RoomDatabase() {
             }
         }
 
-        fun populateDatabase(wordDao: WordDao) {
+        suspend fun populateDatabase(wordDao: WordDao) {
             wordDao.deleteAll()
 
             var word = Word("Hello")
