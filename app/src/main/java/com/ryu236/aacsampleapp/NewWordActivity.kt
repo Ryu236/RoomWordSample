@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-class NewWordActivity : AppCompatActivity {
+class NewWordActivity : AppCompatActivity() {
 
     private lateinit var editWordView: EditText
 
@@ -34,4 +34,5 @@ class NewWordActivity : AppCompatActivity {
     companion object {
         const val EXTRA_REPLY = "com.ryu236.android.wordlistsql.REPLY"
     }
+
 }
